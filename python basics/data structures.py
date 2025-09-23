@@ -1,33 +1,33 @@
 #-------------> list : ordered, mutables, indexed, duplicate values can be stored
 
-# fruits = ["apple", "mango", "banana", "apple"]
+fruits = ["apple", "mango", "banana", "apple"]
 
-# print(fruits)
+print(fruits)
 
-# for f in fruits:
-#     print("The fruit is " + f)
+for f in fruits:
+    print("The fruit is " + f)
 
-# fruits[1] = "orange"
-# print(fruits)
+fruits[1] = "orange"
+print(fruits)
 
-# fruits.append("mango")
-# print(fruits)
+fruits.append("mango")
+print(fruits)
 
-# fruits.insert(2, "gauva")
-# print(fruits)
+fruits.insert(2, "gauva")
+print(fruits)
 
-# fruits.pop()
-# print(fruits)
+fruits.pop()
+print(fruits)
 
-# fruits.remove("orange")
-# print(fruits)
+fruits.remove("orange")
+print(fruits)
 
 #-------------> tuple : ordered, immutable, indexed, duplicate values can be stored
 
-# grade = ("A+", "A", "B", "C", "Fail")
+grade = ("A+", "A", "B", "C", "Fail")
 
-# print(grade[1])
-# print(len(grade))
+print(grade[1])
+print(len(grade))
 
 # grade[4] = "F" # error
 # print(grade)
@@ -37,47 +37,47 @@
 
 # tuple unpacking
 
-# student = ("Ali", 24, "Karachi")
+student = ("Ali", 24, "Karachi")
 
-# name, age, city = student
+name, age, city = student
 
-# print(f"name: {name}, age: {age}, city: {city}")
+print(f"name: {name}, age: {age}, city: {city}")
 
-# print("A+" in grade)
+print("A+" in grade)
 
-# print("D" in grade)
+print("D" in grade)
 
 #------------->  sets : unordered, unindexed, unique items
 
-# courses = {"JS", "Bootstrap", "Markup Language", "JS"}
+courses = {"JS", "Bootstrap", "Markup Language", "JS"}
+print(courses)
+
+courses.add("C#")
+print(courses)
+
+courses.remove("Markup Language")
+print(courses)
+
+# courses.remove("Python") # error
 # print(courses)
 
-# courses.add("C#")
-# print(courses)
+courses.discard("Python") 
+print(courses)
 
-# courses.remove("Markup Language")
-# print(courses)
-
-# # courses.remove("Python") # error
-# # print(courses)
-
-# courses.discard("Python") 
-# print(courses)
-
-# for course in courses:
-#     print(course)
+for course in courses:
+    print(course)
 
 
-# print("JS" in courses)
+print("JS" in courses)
 
 
-# courses2 = {"HTML", "Bootstrap", "Python"}
+courses2 = {"HTML", "Bootstrap", "Python"}
 
-# print(courses | courses2) # union
-# print(courses & courses2) # intersection
-# print(courses - courses2) # difference
-# print(courses2 - courses) # difference
-# print(courses2 ^ courses) # symmetric difference
+print(courses | courses2) # union
+print(courses & courses2) # intersection
+print(courses - courses2) # difference
+print(courses2 - courses) # difference
+print(courses2 ^ courses) # symmetric difference
 
 
 
